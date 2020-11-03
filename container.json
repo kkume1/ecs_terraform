@@ -1,0 +1,21 @@
+[
+  {
+    "name": "nginx-sample",
+    "image": "600814945494.dkr.ecr.ap-northeast-1.amazonaws.com/nginx-sample:latest",
+    "essential": true,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-region": "ap-northeast-1",
+        "awslogs-stream-prefix": "nginx-sample",
+        "awslogs-group": "/nginx-CF/ECS-logs"
+      }
+    },
+    "portMappings": [
+      {
+        "protocol": "tcp",
+        "containerPort": 80
+      }
+    ]
+  }
+]
