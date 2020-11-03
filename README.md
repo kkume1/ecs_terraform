@@ -1,7 +1,8 @@
 ## Terraform による、AWS ECS環境の構築スクリプト
 
 #### 概要
-##### このスクリプトは、AWS ECS(Fargate)をマルチAZで構築するTerraformスクリプトです。
+このスクリプトは、AWS ECS(Fargate)をマルチAZで構築するTerraformスクリプトです。
+cloudformationリポジトリのスクリプトと同内容のものとなります。
 
 ---
 構成図
@@ -13,5 +14,5 @@
 - Natゲートウェイを設置し、プライベートサブネットにECSを構築
 - コンテナのログはCloudwatch Log に出力
 ---
-- ECRの構築、及びdockerイメージのデプロイは、本スクリプトでは記述しておりません。事前に準備が必要です。
+- ECRの構築、S3no構築、及びdockerイメージのデプロイは、本スクリプトでは記述しておりません。事前に準備が必要です。
 - コンテナイメージのCI/CDはCircleCIを使用しております。「nginx-sample」リポジトリを参照ください。
