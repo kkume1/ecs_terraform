@@ -1,7 +1,7 @@
 ## Terraform による、AWS ECS環境の構築スクリプト
 
 #### 概要
-このスクリプトは、AWS ECS(Fargate)をマルチAZで構築するTerraformスクリプトです。
+このスクリプトは、AWS ECS(Fargate)をマルチAZで構築するTerraformスクリプトです。  
 cloudformationリポジトリのスクリプトと同内容のものとなります。
 
 ---
